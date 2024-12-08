@@ -1,0 +1,352 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #004080;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover; /* Makes the image cover the section */
+    height: 80vh; /* Adjust the height as needed */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center; /* Center the image */
+    background-size: cover; /* Ensures the image covers the entire area */
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.hero .btn {
+    background: #ff5733;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.hero .btn:hover {
+    background: #c70039;
+}
+/* Sections */
+section {
+    margin: 20px 0;
+}
+
+/* About Section Styling */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    margin-top: 20px;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures image fits properly */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        margin-top: 20px;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .about-content {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #004080;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.service-item {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Image Styles */
+.service-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Adjust the image size */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .service-item {
+        display: inline-block;
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Contact Section Styling */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #004080; /* Highlight input fields */
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.3);
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #00264d;
+}
+
+/* Contact Image Styling */
+.contact-image {
+    flex: 1;
+    max-width: 500px; /* Control max width of the image */
+    margin-left: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Make sure image maintains aspect ratio */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image {
+        margin-top: 20px;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
